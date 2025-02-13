@@ -1,0 +1,213 @@
+:root{
+    --primmaryColor:rgb(14, 152, 177);
+    --secondaryColor: rgb(179, 213, 219);
+    --lightColor:rgb(212, 212, 212);
+    --bgColor-1:rgb(8, 14, 22);
+    --bgColor-2:rgb(1, 1, 23);
+    --padding: 8%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #2C3E50;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #FD746C, #2C3E50);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #FD746C, #2C3E50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    color: var(--lightColor);
+}
+p{
+    color:var(--secondaryColor);    
+    letter-spacing:1px;
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+h1{
+    font-size: 4.65rem;
+    margin: 1.7rem 0;
+}
+h3{
+    font-size: 1.5rem;
+    margin:3.5rem;
+}
+h4{
+    font-size: 1.25rem;
+    letter-spacing:0.15rem;
+    color: var(--secondaryColor);
+}
+
+.home{
+    width: 100%;
+    height: 110%;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: var(--padding);
+}
+span{
+    color: var(--primmaryColor);
+}
+h2{
+    font-size: 3rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+nav{
+    padding-top: 2.2rem;
+    padding-left: var(--padding);
+    padding-right: var(--padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li{
+    list-style-type: none;
+    display:inline-block;
+    margin: 0.8rem 1.5rem;
+}
+nav ul li a{
+    color: var(--lightColor);
+    text-decoration:none;
+    text-transform: capitalize;
+    transition: 0.6s;
+}
+nav ul li a:hover{
+    color: var(--primmaryColor);
+}
+.btn{
+    background-color: var(--primmaryColor);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border-radius: 30px;
+    transition: 0.6s;
+    border: 2px solid transparent;
+}
+.btn:hover{
+    background-color:transparent;
+    border: 2px solid var(--primmaryColor);
+
+}
+.content{
+    flex-grow: 1;
+    padding: 0 var(--padding);
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home .container-textes{
+    position: relative;
+    bottom: 50px;
+}
+
+.social{
+margin-top: 3.5rem;
+
+}
+.social img{
+    margin-right: 2rem;
+    width: 2rem;
+    transition: 0.4s;
+}
+.social img:hover{
+    transform: scale(1.2);
+}
+.home .container-images{
+    width: 45%;
+    height: 115%;
+    position: relative;
+    align-self: flex-end;
+}
+.home .container-images img{
+    position: absolute;
+    height: 115%;
+    left:25%;
+    top: 1.2rem;
+    transition: .9s;
+}
+.home .container-images:hover .shape{
+    right: 1px;
+}
+.home .container-images:hover .fox{
+    transform: scale(103%);
+}
+.about{
+    background-color:var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: centre;
+    justify-content: space-evenly;
+}
+.about .container-images{
+    margin-top: 2.2rem;
+    width: 45%;
+}
+.about .container-images img{
+    width: 80%;
+}
+.about .container-textes{
+    width: 40%;
+}
+.services {
+    background-color: var(--bgColor-1);
+    padding: 2rem var(--padding);
+}
+.text-centre{
+    text-align: center;
+}
+.box {
+    display:flex;
+    justify-content: space-between;
+}
+.card{
+    width: 260px;
+    background-color:var(--bgColor-2);
+    border-radius: 30px;
+    padding: 1.3rem 2rem ;
+    text-align: center;
+}
+.card em{
+    font-size: 3.12rem;
+    text-align: center;
+    color: var(--primmaryColor);
+    margin: 2rem;
+}
+.skills{
+    background-color:var(--bgColor-2);
+    padding: 2rem var(--padding);
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+}
+.skills .container-images{
+    margin-top: 2.2rem;
+    width: 35%;
+}
+.skills .container-images img{
+    margin-top: 1rem;
+    width: 30rem;
+}
+.content-skills {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 80px 0 0;
+}
+
+.content-skills img{
+    width: 90px;
+}
+
+.content-skills.skill :hover{
+    transform:translate(150%);
+}
